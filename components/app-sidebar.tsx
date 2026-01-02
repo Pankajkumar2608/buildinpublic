@@ -27,17 +27,17 @@ import {
 const items = [
   {
     title: "Home",
-    url: "#",
+    url: "/dashboard",
     icon: Home,
   },
   {
     title: "Post",
-    url: "#",
+    url: "/dashboard",
     icon: Signpost,
   },
   {
     title: "Stats",
-    url: "#",
+    url: "/stats",
     icon: ChartLine,
   },
   //   {
@@ -47,7 +47,7 @@ const items = [
   //   },
   {
     title: "Profile",
-    url: "#",
+    url: "/profile",
     icon: UserPen,
   },
 ];
