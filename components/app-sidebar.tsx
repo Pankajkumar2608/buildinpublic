@@ -1,4 +1,15 @@
-import { Calendar, ChevronUp, Home, Inbox, LogOutIcon, Search, Settings, User2 } from "lucide-react";
+import {
+  Calendar,
+  ChevronUp,
+  Home,
+  Inbox,
+  LogOutIcon,
+  Signpost,
+  Settings,
+  ChartLine,
+  UserPen,
+  User2
+} from "lucide-react";
 
 import {
   Sidebar,
@@ -22,22 +33,22 @@ const items = [
   {
     title: "Post",
     url: "#",
-    icon: Inbox,
+    icon: Signpost,
   },
   {
     title: "Stats",
     url: "#",
-    icon: Calendar,
+    icon: ChartLine,
   },
-//   {
-//     title: "Search",
-//     url: "#",
-//     icon: Search,
-//   },
+  //   {
+  //     title: "Search",
+  //     url: "#",
+  //     icon: Search,
+  //   },
   {
     title: "Profile",
     url: "#",
-    icon: Settings,
+    icon: UserPen,
   },
 ];
 
@@ -63,7 +74,7 @@ export function AppSidebar() {
                   <SidebarMenuButton asChild>
                     <a href={item.url}>
                       <item.icon className="h-24 w-24" />
-                      <span className="font-semibold">{item.title}</span>
+                      <span className="text-md font-semibold">{item.title}</span>
                     </a>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
